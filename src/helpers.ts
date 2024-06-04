@@ -118,7 +118,10 @@ export function relativeTo(
   const directory = base.endsWith("/") ? base : `${base}/`;
   const url = new URL(path, new URL(directory, "resolve://"));
 
-  return url.protocol === "resolve:" ? url.pathname : url.toString();
+  if (url.protocol === "resolve:") {
+    return directory.startsWith("/") ? url.pathname : url.pathname.substring(1);
+  }
+  return url.toString();
 }
 
 function bestSource(

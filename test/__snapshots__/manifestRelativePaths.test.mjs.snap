@@ -103,14 +103,14 @@ exports[`should images without options.path to manifests when manifestRelativePa
     },
   ],
   "html": [
-    "<link rel="manifest" href="/favicons/manifest.webmanifest">",
+    "<link rel="manifest" href="favicons/manifest.webmanifest">",
     "<meta name="mobile-web-app-capable" content="yes">",
     "<meta name="theme-color" content="#fff">",
     "<meta name="application-name">",
     "<meta name="msapplication-TileColor" content="#fff">",
-    "<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">",
-    "<meta name="msapplication-config" content="/favicons/browserconfig.xml">",
-    "<link rel="yandex-tableau-widget" href="/favicons/yandex-browser-manifest.json">",
+    "<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">",
+    "<meta name="msapplication-config" content="favicons/browserconfig.xml">",
+    "<link rel="yandex-tableau-widget" href="favicons/yandex-browser-manifest.json">",
   ],
   "images": [
     {
