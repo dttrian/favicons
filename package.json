@@ -1,5 +1,5 @@
 {
-  "name": "favicons",
+  "name": "favicons-trian",
   "version": "7.2.0",
   "description": "Favicon generator for Node.js",
   "type": "module",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itgalaxy/favicons.git"
+    "url": "git+https://github.com/dttrian/favicons.git"
   },
   "scripts": {
     "fmt": "prettier --write .",
@@ -42,12 +42,12 @@
     "node",
     "realfavicongenerator"
   ],
-  "author": "Hayden Bleasel <haydenbleasel@gmail.com>",
+  "author": "Danilo Turina <danilo.turina@trian.it>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/itgalaxy/favicons/issues"
+    "url": "https://github.com/dttrian/favicons/issues"
   },
-  "homepage": "https://github.com/itgalaxy/favicons",
+  "homepage": "https://github.com/dttrian/favicons",
   "engines": {
     "node": ">=14.0.0"
   },
