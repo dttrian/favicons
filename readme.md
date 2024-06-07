@@ -6,23 +6,30 @@ The use case for which this fork has been produced is the following: for an appl
 While for `manifest.webmanifest` this can be achieved by setting the `manifestRelativePaths` option to true, there is no way in the original version of favicon to have the same kind of result for the generated HTML.
 In other words, it is only possible to obtain something like:
 
+```
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+```
+
 while it would be needed something like:
+
+```
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+```
 
 By using favicons on its own, it would be possible to workaround that problem by leveraging the `path` option that specifies where assets will be located. E. g. `path: "/myapp"`.
-Unfortunately this means that in order to move a webapp from a path to another, it's source code needs to be modified.
-In addition when not using favicons directly but through some other package (e.g. https://github.com/JohnPremKumar/vite-plugin-favicons-inject) this is not possible either.
+Unfortunately this means that in order to move a webapp from a path to another, it's source code needs to be modified.  
+In addition when not using favicons directly but through some other package (e.g. https://github.com/JohnPremKumar/vite-plugin-favicons-inject) this may not be possible either.  
+Notice that by using relative paths with this fork, it is needed to enable `manifestRelativePaths`, otherwise the paths in the manifest will be wrong because relative to the root of the application and not to the position of `manifest.webmanifest`.
 
 For this reasons this fork has been created.
 
 In the following, it has been reported, unmodified, the original readme of favicons 7.2.0.
 Notice that:
 
-- since its name has been changed to favicons-trian, to install this package, the correct command is:
+- since the name of this fork's package is @dttrian/favicons, to install this package, the correct command is:
 
 ```
-npm install favicons-trian
+npm install @dttrian/favicons
 ```
 
 - differently than the original project, no contribution is allowed for this fork
